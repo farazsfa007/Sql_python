@@ -6,7 +6,7 @@ mydb = mysql.connector.connect(
 )
 mycursor = mydb.cursor()
 
-mycursor.execute("SELECT * FROM test2.student_info")
+mycursor.execute("SELECT * FROM test.student_info")
 for q in mycursor.fetchall():
   print(q)
 
